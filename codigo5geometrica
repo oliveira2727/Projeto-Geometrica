@@ -1,0 +1,29 @@
+using System;
+using System.Globalization;
+
+namespace uri1012 {
+    class Program {
+        static void Main(string[] args) {
+
+            double A, B, C, triangulo, circulo, trapezio, quadrado, retangulo;
+
+            string[] valores
+            A = double.Parse(valores[0], CulturInfo.InvariantCulture);
+            B = double.Parse(valores[1], CulturInfo.InvariantCulture);
+            C =  double.Parse(valores[2], CulturInfo.InvariantCulture);
+
+            triangulo = A * C/ 2.0;
+            circulo = 3.1459 * C * C;
+            trapezio = (A + B)/ 2.0 * C;
+            quadrado = B * B;
+            retangulo = A * B;
+
+            Conselo.WriteLine("TRIANGULO:" + triangulo.ToSpring("F3", CulturInfo.InvariantCulture));
+            Conselo.WriteLine("CIRCULO:" + circulo.ToSpring("F3", CulturInfo.InvariantCulture));
+            Conselo.WriteLine("TRAPEZIO:" + trapezio.ToSpring("F3", CulturInfo.InvariantCulture));
+            Conselo.WriteLine("QUADRADO:" + quadrado.ToSpring("F3", CulturInfo.InvariantCulture));
+            Conselo.WriteLine("RETANGULO:" + retangulo.ToSpring("F3", CulturInfo.InvariantCulture));
+
+        }
+    }
+}
